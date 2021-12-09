@@ -1,0 +1,5 @@
+train: ../train_arg/images
+val: ../valid_arg/images
+
+nc: 52
+names: ['Braised lotus roots', 'Dongchimi', 'Japchae', 'Kimchi stew', 'Kimchi', 'Korean rib', 'Korean style raw beef', 'Udon', 'baek Kimchi', 'banquet noodles', 'bean sprout soup', 'beef-bone soup', 'bellflower greens', 'bibimbap', 'boiled fish paste soup', 'budaejjigae', 'bulgogi', 'chonggak Kimchi', 'cucumber kimchi', 'cup rice', 'dried pollack soup', 'eel', 'fried rice', 'green onion Kimchi', 'grilled mackerel', 'janjorim', 'jeyuk bokkeum', 'memil soba', 'miso soup', 'mixed rice', 'nabak Kimchi', 'naengMyeon', 'pickled sesame leaf', 'pig hocks', 'pork belly', 'radish Kimchi', 'radish kimchi', 'rice', 'rice ball', 'rice roll', 'seasoned bean sprouts', 'seasoned bellflower root', 'seasoned bracken', 'seasoned zucchini', 'seaweed soup', 'seaweed', 'shellfish soup', 'spicy yuke jang', 'spinach greens', 'stewed mackerel', 'stir-fried anchovies', 'young radish Kimchi']
