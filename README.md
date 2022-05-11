@@ -45,12 +45,38 @@ We divided upper categories such as rice/soup/noodles/meat side dishes/vegetable
 The collected images were created and labeled using roboflow, and data augmentation was used to increase insufficient data. Using data augmentation, we can increase 600 images to 2,400.
 <br> <br> <br>
 
-<p align="center"><img src="./img/ppt8.png" width="800" heigth="600"/></p> <br> <br>
-<p align="center"><img src="./img/ppt9.png" width="800" heigth="600"/></p> <br> <br>
-<p align="center"><img src="./img/ppt10.png" width="800" heigth="600"/></p> <br> <br>
-<p align="center"><img src="./img/ppt11.png" width="800" heigth="600"/></p> <br> <br>
-<p align="center"><img src="./img/ppt12.png" width="800" heigth="600"/></p> <br> <br>
-<p align="center"><img src="./img/ppt13.png" width="800" heigth="600"/></p> <br> <br>
-<br>
+<p align="center"><img src="./img/ppt8.png" width="800" heigth="600"/></p>
+We checked the mAP, P-curve, and R-curve to check the accuracy of the model.<br>
+mAP is mean Average Precision, and is the value obtained by considering the Precision and Recall of the model. Precision is a value indicating how accurate the positive results of the model's predictions are, and Recall is a measure of how well the predicted results of the model find positive values.<br>
+So the higher the mAP value, the better the performance of the model.
+<br> <br> <br>
+
+<p align="center"><img src="./img/ppt9.png" width="800" heigth="600"/></p>
+The highest mAP among my models was the case of first training at 400 epochs with UEC_FOOD_256 data, and then fine-tuning again with 650 epochs with Korean Food data. And we use data augmentation to supplement the insufficient Korean Food data. <br>
+The results of this model are 0.705 for mAP, 0.59 for P(Precision), and 0.702 for R(Recall), and the detailed results are as follows.
+<br> <br> <br>
+
+<p align="center"><img src="./img/ppt10.png" width="800" heigth="600"/></p>
+And when we applied it to the real image, it has the following results. <br>
+And considering the type and number of foods, it also tells you the score of your diet.
+<br> <br> <br>
+
+<p align="center"><img src="./img/ppt11.png" width="800" heigth="600"/></p>
+Through this project, we learned which parts are important to increase the accuracy when training machine learning, and we learned about how to check the accuracy of the model.<br>
+The factors that influence the accuracy are as follows.<br>
+First, appropriate data augmentation is needed. It is true that the higher the number of data, the higher the accuracy. However, when the data is transformed too much, the accuracy is significantly decreased. Data argument options have Flip, 90 Rotate, Crop, Rotation, Shear, Grayscale, Hue, Saturation, Brightness, Exposure, Blur, Noise, Cutout, Mosaic and many more. But when everything was applied, the mAP was less than 0.01. The options that produced the best results in our project are Flip, 90 Rotate, Crop, Rotation, Shear, Saturation, Brightness, Exposure, and Blur.
+<br> <br>
+And second, when fine-tuning, the learning rate should be reduced. If the default value (0.01) is used in fine-tuning, the mAP has less than 0.01 due to overfitting. The rest of the conditions also affect the mAP, but it did not drop significantly, about 0.5.
+<br> <br> <br>
+
+
+<p align="center"><img src="./img/ppt12.png" width="800" heigth="600"/></p>
+Finally, through this program, we hope that many people can control their diet more easily, we can apply it to our next machine learning project and get high accuracy faster.
+<br> <br> <br>
+
+<p align="center"><img src="./img/ppt13.png" width="800" heigth="600"/></p>
+Thank you for listening to my presentation
+<br> <br> <br>
+
 We welcome all opinions such as code and README grammar,<br>
 so if you find any problems, please feel free to contact us.<br>
