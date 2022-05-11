@@ -78,5 +78,5 @@ Finally, through this program, we hope that many people can control their diet m
 Thank you for listening to my presentation
 <br> <br> <br>
 
-We welcome all opinions such as code and README grammar,<br>
-so if you find any problems, please feel free to contact us.<br>
+**We welcome all opinions such as code and README grammar,<br>
+so if you find any problems, please feel free to contact us.<br>**
